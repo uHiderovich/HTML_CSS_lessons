@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(../fonts/Inter-Regular.woff2);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(../fonts/Inter-SemiBold.woff2);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url(../fonts/Inter-Bold.woff2);
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+.container {
+  width: 100%;
+  max-width: 1226px;
+  margin: 0 auto;
+  padding: 0 26px;
+}
+
+.logo {
+  width: 137px;
+  height: 40px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0 24px;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 14px;
+}
+
+.navigation__link {
+  display: block;
+  padding: 10px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.navigation__link_active {
+  color: #F25822;
+}
+
+.main-section {
+  margin-bottom: 154px;
+  padding: 52px 0;
+}
+
+.main-section__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-section__container::after {
+  content: '';
+  width: 545px;
+  height: 375px;
+  background-image: url(../img/main-img.png);
+}
+
+.main-section__content {
+  width: 100%;
+  max-width: 556px;
+}
+
+.main-section__title {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main-section__description {
+  margin-bottom: 25px;
+  color: #888;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.main-section__actions {
+  display: flex;
+  gap: 38px;
+}
+
+.button {
+  padding: 16px 10px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.button_accent {
+  min-width: 140px;
+  border-radius: 56px;
+  background: #F25822;
+  box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+  color: #fff;
+}
+
+.button_transparent {
+  color: #AAA;
+}
+
+.partners {
+  padding: 46px 0;
+}
+
+.partners__list {
+  display: flex;
+  gap: 48px;
+}
+
+.partners__img {
+  width: auto;
+  height: 50px;
+}
